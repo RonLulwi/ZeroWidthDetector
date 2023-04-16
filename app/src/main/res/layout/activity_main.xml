@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:id="@+id/main_EDT_input"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="25sp"
+       android:layout_above="@id/main_BTN_submit"
+       />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_BTN_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find ZW Characters"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/main_LBL_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/main_BTN_submit"/>
+
+</RelativeLayout>
